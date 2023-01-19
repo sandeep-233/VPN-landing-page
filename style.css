@@ -65,10 +65,11 @@ header p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    /* height: 300px; */
     margin: 24px 0px;
     background: white;
     border-radius: 18px;
+    padding: 12px;
 }
 img {
     width: 30%;
@@ -84,15 +85,6 @@ img {
 .main-container section .about p {
     margin: 24px 0px;
 }
-/* .main-container section .about button {
-    background: #0e856a;
-    font-weight: bold;
-    padding: 12px;
-    border: none;
-    border-radius: 17px;
-    color: white;
-    cursor: pointer;
-} */
 .main-container section .about .devices ul {
     display: flex;
     width: 150%;
@@ -123,6 +115,7 @@ img {
     grid-template-columns: 31% 31% 31%;
     grid-template-rows: auto;
     grid-gap: 34px;
+    margin: 18px 0px;
 }
 .main-container .advantages .some_advantages div {
     display: flex;
@@ -142,7 +135,6 @@ img {
 .some_advantages .advan p {
     text-align: center;
 }
-
 /* styling footer  */
 footer {
     display: flex;
@@ -181,4 +173,33 @@ button:hover {
 }
  a:hover {
     text-decoration: underline;
+ }
+
+@media screen and (max-width: 590px) {
+    header {
+        font-size: large;
+        text-align: center;
+    }
+    .main-container section {
+        width: auto;
+    }
+    .main-container section .about {
+        width: auto;
+        height: auto;
+    }
+    .main-container .advantages .some_advantages {
+        grid-template-columns: auto;
+    }
+    footer {
+        text-align: center;
+    }
+    footer h2 {
+        font-size: xx-large;
+    }
+    footer .world_img_and_details {
+        flex-direction: column;
+    }
+    footer .world_img_and_details .details {
+        display: flex;
+    }
  }
